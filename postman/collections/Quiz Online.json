@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "b7c4aad9-1cef-4729-a77f-1c50d88238d5",
+		"name": "Quiz Online",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "9102770-b7c4aad9-1cef-4729-a77f-1c50d88238d5"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "45e933ea-7383-4732-8c35-9ee0de0f12f4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "1636035b-f12b-48ba-8d92-6f4e0f59bd0f"
+		},
+		{
+			"name": "version",
+			"id": "c2031ace-4c48-4f46-8da2-e1acbc44e161",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "version",
+					"host": [
+						"version"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "46cd9d4b-3b39-4cf3-bdf5-86a1249f088f",
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "version",
+							"host": [
+								"version"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ecb5c26a-d734-4543-8bdd-c6769aab5ee4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b9b539a9-b540-43bb-9f28-3c30533c2563",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a2c5136b-450d-4ea7-8a08-6e9b4d1385e3",
+			"key": "baseUrl",
+			"value": "http://localhost",
+			"type": "string"
+		}
+	]
+}
